@@ -16,8 +16,8 @@
 	</header>
 	<article>
 		<ul>
-			<?php foreach ($names as $name): ?>
-				<li><?= $name; ?></li>
+			<?php foreach ($task as $key => $value): ?>
+				<li><strong><?= $key; ?></strong> : <?= $value; ?></li>
 			<?php endforeach; ?>
 		</ul>
 	</article>
