@@ -2,6 +2,6 @@
 
 $greetings = 'Hello world';
 
-$names = ['John', 'Jane', 'Joe', 'Frank'];
+$names = ['Wolf', 'Tiger', 'Dog', 'Cat', 'Eagle'];
 
 require 'view/index.php';
