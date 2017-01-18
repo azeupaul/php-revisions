@@ -16,9 +16,10 @@
 	</header>
 	<article>
 		<ul>
-			<?php foreach ($task as $key => $value): ?>
-				<li><strong><?= $key; ?></strong> : <?= $value; ?></li>
-			<?php endforeach; ?>
+				<li><strong>Name:</strong> <?= $task['title']; ?></li>
+				<li><strong>Due: </strong> : <?= $task['due']; ?></li>
+				<li><strong>Responsible: </strong> : <?= $task['assigned_to']; ?></li>
+				<li><strong>Completed</strong> : <?= $task['completed'] ? 'Complete' : 'Incomplete'; ?></li>
 		</ul>
 	</article>
 	</body>

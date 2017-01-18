@@ -4,9 +4,9 @@ $greetings = 'Hello world';
 
 $task = [
 	'title'       => 'Revise your PHP base',
-	'due'         => '31-01-2017',
+	'due'         => 'today',
 	'assigned_to' => 'Pablo',
-	'completed'   => 'No'
+	'completed'   => false
 ];
 
 require 'view/index.php';
