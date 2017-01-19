@@ -18,7 +18,7 @@ class Task
 	}
 }
 
-$task = new Task('Learn PHP');
-dd($task);
+$pdo = connectDb();
+dd($pdo);
 
 require 'view/index.php';
