@@ -8,6 +8,5 @@ $greetings = 'Hello world';
 
 $pdo = connectDb();
 $tasks = allTasks($pdo);
-dd($tasks);
 
 require 'view/index.php';

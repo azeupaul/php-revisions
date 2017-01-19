@@ -16,10 +16,13 @@
 	</header>
 	<article>
 		<ul>
-				<li><strong>Name:</strong> <?= $task['title']; ?></li>
-				<li><strong>Due: </strong> : <?= $task['due']; ?></li>
-				<li><strong>Responsible: </strong> : <?= $task['assigned_to']; ?></li>
-				<li><strong>Completed</strong> : <?= $task['completed'] ? 'Complete' : 'Incomplete'; ?></li>
+			<?php foreach($tasks as $task): ?>
+				<?php if($task->isComplete()): ?>
+					<li><strike><?= $task->getTitle(); ?></strike></li>
+				<?php else: ?>
+					<li><?= $task->getTitle(); ?></li>
+				<?php endif; ?>
+			<?php endforeach; ?>
 		</ul>
 	</article>
 	</body>
