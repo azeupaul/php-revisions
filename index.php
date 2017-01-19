@@ -11,14 +11,18 @@ class Task
 	protected $title;
 	protected $completed;
 
-	function __construct($title)
+	function __construct($title = null)
 	{
-		$this->title = $title;
+		if($title){
+			$this->title = $title;
+		}
+		
 		$this->completed = false;
 	}
 }
 
 $pdo = connectDb();
-dd($pdo);
+$tasks = allTasks($pdo);
+dd($tasks);
 
 require 'view/index.php';

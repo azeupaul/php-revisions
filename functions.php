@@ -16,3 +16,11 @@ function connectDb()
 		die($e->getMessage());
 	}
 }
+
+function allTasks($pdo)
+{
+	$query = $pdo->prepare('SELECT * FROM todos');
+	$query->execute();
+
+	return $query->fetchAll(PDO::FETCH_CLASS, 'Task');
+}
