@@ -12,7 +12,7 @@
 	</head>
 	<body>
 	<header>
-		<h1><?= $greetings; ?></h1>
+		<h1>Welcome to my revision page</h1>
 	</header>
 	<article>
 		<ul>

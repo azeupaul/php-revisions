@@ -1,15 +1,8 @@
 <?php
 
-require 'database/Connector.php';
-require 'database/QueryBuilder.php';
-require 'functions.php';
 require 'class/Task.php';
-$greetings = 'Hello world';
 
-
-
-$instance = Connector::make();
-$builder = new QueryBuilder($instance);
+$builder = require 'bootstrap.php';
 
 $tasks = $builder->findAll('todos');
 
