@@ -1,5 +1,6 @@
 <?php
 
+require 'functions.php';
 $greetings = 'Hello world';
 
 $task = [
@@ -8,5 +9,7 @@ $task = [
 	'assigned_to' => 'Pablo',
 	'completed'   => false
 ];
+
+dd($task);
 
 require 'view/index.php';
