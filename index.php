@@ -1,13 +1,16 @@
 <?php
 
 require 'database/Connector.php';
-require 'functions.php';
+require 'database/QueryBuilder.php';
 require 'class/Task.php';
 $greetings = 'Hello world';
 
 
 
-$pdo = Connector::make();
-$tasks = allTasks($pdo);
+$instance = Connector::make();
+$builder = new QueryBuilder($instance);
+
+$tasks = $builder->findAll('todos');
+
 
 require 'view/index.php';

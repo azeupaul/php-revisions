@@ -2,8 +2,6 @@
 
 class Connector
 {
-    protected $db_instance;
-
     public static function make()
     {
         try{
