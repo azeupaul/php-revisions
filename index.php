@@ -2,7 +2,7 @@
 
 require 'class/Task.php';
 
-$builder = require 'core/bootstrap.php';
+require 'core/bootstrap.php';
 
 $router = Router::load('routes.php');
 
