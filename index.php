@@ -2,7 +2,7 @@
 
 require 'class/Task.php';
 
-$builder = require 'bootstrap.php';
+$builder = require 'core/bootstrap.php';
 
 $tasks = $builder->findAll('todos');
 
@@ -14,4 +14,4 @@ $tasks = array_map(function($task){
     return $t;
 }, $tasks);
 
-require 'view/index.php';
+require 'view/index.view.php';
