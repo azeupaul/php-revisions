@@ -4,14 +4,9 @@ require 'class/Task.php';
 
 $builder = require 'core/bootstrap.php';
 
-$tasks = $builder->findAll('todos');
+$router = new Router();
 
-$tasks = array_map(function($task){
-    $t = new Task($task->title);
-    if($task->completed > 0){
-        $t->complete();
-    }
-    return $t;
-}, $tasks);
+require 'routes.php';
 
-require 'view/index.view.php';
+require $router->direct(trim($_SERVER['REQUEST_URI'], '/'));
+
