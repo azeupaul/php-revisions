@@ -1,16 +1,4 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>PHP revisions</title>
-		<style>
-			header{
-				background: #e3e3e3;
-				padding: 2em;
-				text-align: center;
-			}
-		</style>
-	</head>
-	<body>
+<?php require 'partials/header.php'; ?>
 	<header>
 		<h1>Welcome to my revision page</h1>
 	</header>
@@ -25,6 +13,4 @@
 			<?php endforeach; ?>
 		</ul>
 	</article>
-	</body>
-</html>
-
+<?php require 'partials/footer.php'; ?>
