@@ -3,7 +3,7 @@
 namespace App\Controllers;
 
 use App\Core\App;
-use App\Model\Task;
+use App\Models\Task;
 
 class PagesController
 {
