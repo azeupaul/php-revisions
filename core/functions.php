@@ -9,6 +9,6 @@ function view($file, $datas = [])
 {
 	extract($datas);
 
-	return require "views/{$file}.view.php";
+	return require "app/views/{$file}.view.php";
 }
 
