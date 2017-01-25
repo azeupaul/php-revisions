@@ -14,7 +14,7 @@ class PagesController
             return $t;
         }, $tasks);
 
-        return  view('home');
+        return  view('home', compact('tasks'));
     }
 
     public function about()

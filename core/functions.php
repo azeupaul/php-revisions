@@ -5,8 +5,10 @@ function dd($data)
 	die(var_dump($data));
 }
 
-function view($file)
+function view($file, $datas = [])
 {
+	extract($datas);
+
 	return require "views/{$file}.view.php";
 }
 
