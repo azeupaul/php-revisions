@@ -1,5 +1,10 @@
 <?php
 
+namespace App\Controllers;
+
+use App\Core\App;
+use App\Model\Task;
+
 class PagesController
 {
     public function home()
