@@ -12,6 +12,7 @@ class ComposerStaticInitb20567ced2f018b6186ea866a50f7ffb
         'Composer\\Autoload\\ClassLoader' => __DIR__ . '/..' . '/composer/ClassLoader.php',
         'Composer\\Autoload\\ComposerStaticInitb20567ced2f018b6186ea866a50f7ffb' => __DIR__ . '/..' . '/composer/autoload_static.php',
         'Connector' => __DIR__ . '/../..' . '/core/database/Connector.php',
+        'PagesController' => __DIR__ . '/../..' . '/controllers/PagesController.php',
         'QueryBuilder' => __DIR__ . '/../..' . '/core/database/QueryBuilder.php',
         'Request' => __DIR__ . '/../..' . '/core/Request.php',
         'Router' => __DIR__ . '/../..' . '/core/Router.php',
