@@ -1,6 +1,6 @@
 <?php
 
-$tasks = $app['database']->findAll('todos');
+$tasks = App::get('database')->findAll('todos');
 
 $tasks = array_map(function($task){
     $t = new Task($task->title);
