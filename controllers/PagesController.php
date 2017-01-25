@@ -14,16 +14,16 @@ class PagesController
             return $t;
         }, $tasks);
 
-        require 'views/index.view.php';
+        return  view('home');
     }
 
     public function about()
     {
-        require 'views/about.view.php';
+        return  view('about');
     }
 
     public function contact()
     {
-        require 'views/contact.view.php';
+        return  view('contact');
     }
 }
